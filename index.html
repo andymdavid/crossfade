@@ -1,0 +1,461 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Productize Template</title>
+  <link rel="stylesheet" href="css/reset.css" />
+  <link rel="stylesheet" href="css/variables.css" />
+  <link rel="stylesheet" href="css/typography.css" />
+  <link rel="stylesheet" href="css/components.css" />
+  <link rel="stylesheet" href="css/main.css" />
+</head>
+<body>
+  <div class="hero__background"></div>
+
+  <header class="header">
+    <div class="header__container">
+      <a href="#top" class="header__logo">
+        <span class="header__logo-text">Productize</span>
+      </a>
+      <button class="header__toggle" aria-expanded="false" aria-controls="primary-nav" aria-label="Toggle navigation">
+        <span class="header__toggle-icon"><span></span></span>
+      </button>
+      <nav class="header__nav" id="primary-nav" aria-label="Primary navigation">
+        <a href="#how-it-works" class="header__nav-link">How it works</a>
+        <a href="#benefits" class="header__nav-link">Benefits</a>
+        <a href="#work" class="header__nav-link">Recent work</a>
+        <a href="#pricing" class="header__nav-link">Pricing</a>
+        <a href="#faq" class="header__nav-link">FAQs</a>
+      </nav>
+      <div class="header__actions">
+        <button class="btn-primary btn-primary--small" type="button">Get started</button>
+      </div>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero-stack">
+      <!-- Section 01: Hero -->
+      <section class="hero" id="hero">
+        <div class="hero__inner">
+          <div class="hero__light-streak hero__light-streak--red" aria-hidden="true"></div>
+          <div class="hero__light-streak hero__light-streak--blue" aria-hidden="true"></div>
+          <div class="hero__light-streak hero__light-streak--green" aria-hidden="true"></div>
+          <div class="hero__light-streak hero__light-streak--yellow" aria-hidden="true"></div>
+
+          <div class="hero__logo">Productize</div>
+          <h1 class="hero__title heading-1 text-zoom">10x your conversion rate with award-winning web design.</h1>
+          <p class="hero__subtitle body-large text-zoom">The unlimited, lightning fast web design subscription service.</p>
+          <div class="hero__cta">
+            <button class="btn-primary" type="button">See plans</button>
+          </div>
+          <p class="hero__quote">"You never get a second chance to make a first impression." - Will Rogers</p>
+        </div>
+      </section>
+
+      <!-- Section 03: Did You Know (overlay) -->
+      <section class="stats stats--overlay" id="how-it-works">
+        <p class="stats__label">Did you know?</p>
+        <h2 class="stats__headline heading-2">74% of users leave a website because of its design.</h2>
+        <p class="stats__body body-large">Stop letting potential customers slip through your grasp with mediocre design.</p>
+      </section>
+    </section>
+
+    <!-- Section 04: Mission Statement -->
+    <section class="section mission">
+      <h2 class="mission__headline heading-2 text-zoom">Our mission is to create websites that help you get more customers.</h2>
+      <h3 class="mission__subheadline heading-3 text-zoom">But, we do things a little differently around here.</h3>
+      <p class="mission__body body-large text-zoom">We didn't re-invent the wheel, we re-designed it. Say goodbye to design as you know it with Productize.</p>
+    </section>
+
+    <!-- Section 05: Process Cards -->
+    <section class="section process">
+      <div class="process__grid">
+        <article class="process-card">
+          <div class="process-card__icon">
+            <img src="images/process/subscribe.jpg" alt="Subscribe & request" loading="lazy" />
+          </div>
+          <h3 class="process-card__title">Subscribe & request</h3>
+          <p class="process-card__description">Subscribe to one of our plans and start requesting as many designs as you'd like.</p>
+        </article>
+        <article class="process-card">
+          <div class="process-card__icon">
+            <img src="images/process/turnaround.jpg" alt="3-4 day turnaround" loading="lazy" />
+          </div>
+          <h3 class="process-card__title">3-4 day turnaround</h3>
+          <p class="process-card__description">Receive designs quickly with a dedicated team focused on speed and quality.</p>
+        </article>
+        <article class="process-card">
+          <div class="process-card__icon">
+            <img src="images/process/revise.jpg" alt="Revise until satisfied" loading="lazy" />
+          </div>
+          <h3 class="process-card__title">Revise until satisfied</h3>
+          <p class="process-card__description">Request revisions until you're thrilled. We're here until it is perfect.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Section 06: Testimonial -->
+    <section class="section testimonial">
+      <h2 class="testimonial__quote heading-2 text-zoom">“It's incredible how much of an impact a new landing page design has had on our business.”</h2>
+      <img src="images/benefits/logo-primary.png" alt="Company logo" class="testimonial__logo" loading="lazy" />
+    </section>
+
+    <!-- Section 07: Value Proposition -->
+    <section class="section value-prop">
+      <h2 class="value-prop__headline heading-2 text-zoom">You'll wonder how you ever managed without it.</h2>
+      <p class="value-prop__body body-large text-zoom">Productize replaces unreliable freelancers and expensive agencies for one flat monthly fee, with highly-converting designs delivered so fast that it will blow your mind.</p>
+    </section>
+
+    <!-- Section 08: Secondary Testimonial -->
+    <section class="section testimonial">
+      <h2 class="testimonial__quote heading-2 text-zoom">“Getting design done was such a pain. I am so glad we found Productize, the work is incredible and the process is refreshingly painless.”</h2>
+      <img src="images/benefits/logo-secondary.png" alt="Company logo" class="testimonial__logo" loading="lazy" />
+    </section>
+
+    <!-- Section 09: Feature List -->
+    <section class="feature-list" id="benefits">
+      <div class="feature-list__grid">
+        <div class="feature-list__item text-center">
+          <div class="feature-list__title">Submit unlimited requests</div>
+          <p class="feature-list__description">Queue every idea. We work through them one by one.</p>
+        </div>
+        <div class="feature-list__item text-center">
+          <div class="feature-list__title">Manage with Notion</div>
+          <p class="feature-list__description">Track requests, approvals, and timelines in a single board.</p>
+        </div>
+        <div class="feature-list__item text-center">
+          <div class="feature-list__title">Invite unlimited team members</div>
+          <p class="feature-list__description">Collaborate with your entire team without extra fees.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 10: Benefits Grid -->
+    <section class="benefits">
+      <div class="benefits__intro">
+        <h2 class="benefits__title heading-2 text-zoom">Benefits that compound</h2>
+        <p class="benefits__subtitle body-large text-zoom">High-converting design, delivered fast, with predictable pricing.</p>
+      </div>
+      <div class="benefits__grid">
+        <article class="benefit-card">
+          <div class="benefit-card__border-animation"></div>
+          <div class="benefit-card__content">
+            <img src="images/benefits/design-board.jpg" alt="Design board" class="benefit-card__icon" loading="lazy" />
+            <h3 class="benefit-card__title">Design board</h3>
+            <p class="benefit-card__description">Get your very own design board where you can add as many requests as you'd like.</p>
+          </div>
+        </article>
+        <article class="benefit-card">
+          <div class="benefit-card__border-animation"></div>
+          <div class="benefit-card__content">
+            <img src="images/benefits/lightning.jpg" alt="Lightning fast delivery" class="benefit-card__icon" loading="lazy" />
+            <h3 class="benefit-card__title">Lightning fast delivery</h3>
+            <p class="benefit-card__description">Average turnaround of 48 hours keeps your roadmap moving.</p>
+          </div>
+        </article>
+        <article class="benefit-card">
+          <div class="benefit-card__border-animation"></div>
+          <div class="benefit-card__content">
+            <img src="images/benefits/rate.jpg" alt="Fixed monthly rate" class="benefit-card__icon" loading="lazy" />
+            <h3 class="benefit-card__title">Fixed monthly rate</h3>
+            <p class="benefit-card__description">No surprises or hourly bills. One transparent monthly invoice.</p>
+          </div>
+        </article>
+        <article class="benefit-card">
+          <div class="benefit-card__border-animation"></div>
+          <div class="benefit-card__content">
+            <img src="images/benefits/high-converting.jpg" alt="High-converting designs" class="benefit-card__icon" loading="lazy" />
+            <h3 class="benefit-card__title">High-converting designs</h3>
+            <p class="benefit-card__description">Pages engineered to maximize conversions and revenue.</p>
+          </div>
+        </article>
+        <article class="benefit-card">
+          <div class="benefit-card__border-animation"></div>
+          <div class="benefit-card__content">
+            <img src="images/benefits/flexible.jpg" alt="Flexible & scalable" class="benefit-card__icon" loading="lazy" />
+            <h3 class="benefit-card__title">Flexible & scalable</h3>
+            <p class="benefit-card__description">Scale your requests up or down as your priorities shift.</p>
+          </div>
+        </article>
+        <article class="benefit-card">
+          <div class="benefit-card__border-animation"></div>
+          <div class="benefit-card__content">
+            <img src="images/benefits/unique.jpg" alt="Unique and all yours" class="benefit-card__icon" loading="lazy" />
+            <h3 class="benefit-card__title">Unique and all yours</h3>
+            <p class="benefit-card__description">Own every pixel with bespoke work crafted for your brand.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Section 11: Portfolio Showcase -->
+    <section class="portfolio" id="work">
+      <div class="portfolio__header">
+        <h2 class="portfolio__title heading-2 text-zoom">Let our work do the talking.</h2>
+        <p class="portfolio__description body-large text-zoom">Productize replaces unreliable freelancers and expensive agencies for one flat monthly fee, with highly-converting designs delivered so fast that it will blow your mind.</p>
+        <a class="portfolio__link" href="#work">View recent work</a>
+      </div>
+      <div class="portfolio__grid">
+        <img class="portfolio__image" src="images/portfolio/work-1.jpg" alt="Recent work 1" loading="lazy" />
+        <img class="portfolio__image" src="images/portfolio/work-2.jpg" alt="Recent work 2" loading="lazy" />
+        <img class="portfolio__image" src="images/portfolio/work-3.jpg" alt="Recent work 3" loading="lazy" />
+        <img class="portfolio__image" src="images/portfolio/work-4.jpg" alt="Recent work 4" loading="lazy" />
+        <img class="portfolio__image" src="images/portfolio/work-5.jpg" alt="Recent work 5" loading="lazy" />
+        <img class="portfolio__image" src="images/portfolio/work-6.jpg" alt="Recent work 6" loading="lazy" />
+      </div>
+    </section>
+
+    <!-- Section 12: Featured Logos -->
+    <section class="featured-logos">
+      <div class="featured-logos__title">Designs commonly featured on</div>
+      <div class="featured-logos__row">
+        <img src="images/portfolio/logo-1.png" alt="Featured logo 1" class="featured-logos__item" loading="lazy" />
+        <img src="images/portfolio/logo-2.png" alt="Featured logo 2" class="featured-logos__item" loading="lazy" />
+        <img src="images/portfolio/logo-3.png" alt="Featured logo 3" class="featured-logos__item" loading="lazy" />
+        <img src="images/portfolio/logo-4.png" alt="Featured logo 4" class="featured-logos__item" loading="lazy" />
+        <img src="images/portfolio/logo-5.png" alt="Featured logo 5" class="featured-logos__item" loading="lazy" />
+        <img src="images/portfolio/logo-6.png" alt="Featured logo 6" class="featured-logos__item" loading="lazy" />
+      </div>
+    </section>
+
+    <!-- Section 13: Services List -->
+    <section class="section services">
+      <h2 class="services__title heading-2 text-zoom">All your design needs.</h2>
+      <p class="services__description body-large text-zoom">Running a successful business means having a partner who can design anything you need, on demand.</p>
+      <div class="services__grid">
+        <div class="services__item">Website</div>
+        <div class="services__item">Landing page</div>
+        <div class="services__item">Dashboard</div>
+        <div class="services__item">Product design</div>
+        <div class="services__item">Email design</div>
+        <div class="services__item">Branding</div>
+        <div class="services__item">Pitch deck</div>
+        <div class="services__item">Mobile app</div>
+      </div>
+    </section>
+
+    <!-- Section 14: Pricing Table -->
+    <section class="pricing" id="pricing">
+      <div class="pricing__header">
+        <h2 class="pricing__title heading-2 text-zoom">Plans that scale with you.</h2>
+        <p class="pricing__subtitle body-large text-zoom">Choose a plan that's right for you.</p>
+      </div>
+      <div class="pricing__grid">
+        <article class="pricing-card">
+          <div class="pricing-card__header">
+            <h3 class="pricing-card__name">Standard</h3>
+            <p class="pricing-card__subtitle">One request at a time. Pause or cancel anytime.</p>
+          </div>
+          <div class="pricing-card__price">
+            <span class="pricing-card__amount">$3,995</span>
+            <span class="pricing-card__period">/m</span>
+          </div>
+          <button class="btn-primary pricing-card__cta" type="button">Get started</button>
+          <div class="pricing-card__features">
+            <p class="pricing-card__features-label">What's included:</p>
+            <ul class="pricing-card__features-list">
+              <li>Unlimited design requests</li>
+              <li>One request at a time</li>
+              <li>Average 48 hours delivery</li>
+              <li>Unlimited brands</li>
+              <li>Unlimited users</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="pricing-card pricing-card--highlighted">
+          <div class="pricing-card__header">
+            <h3 class="pricing-card__name">Pro</h3>
+            <p class="pricing-card__subtitle">Two requests at a time. Dedicated design pod.</p>
+          </div>
+          <div class="pricing-card__price">
+            <span class="pricing-card__amount">$5,995</span>
+            <span class="pricing-card__period">/m</span>
+          </div>
+          <button class="btn-primary pricing-card__cta" type="button">Get started</button>
+          <div class="pricing-card__features">
+            <p class="pricing-card__features-label">What's included:</p>
+            <ul class="pricing-card__features-list">
+              <li>All Standard features</li>
+              <li>Two requests at a time</li>
+              <li>Priority turnaround</li>
+              <li>Strategy & experimentation</li>
+              <li>Slack collaboration</li>
+            </ul>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Section 15: Add-Ons -->
+    <section class="addons">
+      <article class="addons__card">
+        <div class="addons__icon" aria-hidden="true">📞</div>
+        <h3 class="addons__title heading-3">Book a call</h3>
+        <p class="addons__description body-large">Schedule a strategy call to align on goals and upcoming requests.</p>
+        <button class="btn-secondary" type="button">Learn more</button>
+      </article>
+      <article class="addons__card">
+        <div class="addons__icon" aria-hidden="true">🤝</div>
+        <h3 class="addons__title heading-3">Refer a friend &amp; earn</h3>
+        <p class="addons__description body-large">Share Productize and earn 5% monthly recurring rewards for each referral.</p>
+        <button class="btn-secondary" type="button">Refer now</button>
+      </article>
+      <article class="addons__card addons__card--highlight">
+        <div class="addons__icon" aria-hidden="true">⚡</div>
+        <h3 class="addons__title heading-3">Framer Dev</h3>
+        <p class="addons__description body-large">Hands-on Framer development to ship faster with your dedicated pod.</p>
+        <div class="addons__price">$995/m</div>
+        <button class="btn-primary" type="button">Get started</button>
+      </article>
+    </section>
+
+    <!-- Section 16: Testimonial with Logo -->
+    <section class="section testimonial">
+      <h2 class="testimonial__quote heading-2">“The fact that we can get unlimited design work done is mind-blowing. Absolute non-brainer.”</h2>
+      <img src="images/benefits/logo-tertiary.png" alt="Company logo" class="testimonial__logo" loading="lazy" />
+    </section>
+
+    <!-- Section 17: FAQ Accordion -->
+    <section class="faq" id="faq">
+      <div class="faq__header">
+        <h2 class="faq__title heading-2">FAQs</h2>
+        <p class="faq__description body-large">We appreciate that we do things differently than what you've seen before, so we know you have questions.</p>
+      </div>
+      <div class="faq__list">
+        <div class="faq__item">
+          <button class="faq__button" aria-expanded="false">
+            <span>Why wouldn't I just hire a full-time designer?</span>
+            <span class="faq__icon" aria-hidden="true">+</span>
+          </button>
+          <div class="faq__content">
+            <p class="feature-list__description">A full-time senior designer costs more than double and often doesn't cover research, systems, and multi-surface expertise you get here.</p>
+          </div>
+        </div>
+        <div class="faq__item">
+          <button class="faq__button" aria-expanded="false">
+            <span>Is there a limit to how many requests I can have?</span>
+            <span class="faq__icon" aria-hidden="true">+</span>
+          </button>
+          <div class="faq__content">
+            <p class="feature-list__description">Queue unlimited requests; we work through them based on your priorities (one or two at a time depending on plan).</p>
+          </div>
+        </div>
+        <div class="faq__item">
+          <button class="faq__button" aria-expanded="false">
+            <span>How fast will I receive my designs?</span>
+            <span class="faq__icon" aria-hidden="true">+</span>
+          </button>
+          <div class="faq__content">
+            <p class="feature-list__description">Most requests are turned around in ~48 hours; larger projects are split into fast-moving milestones.</p>
+          </div>
+        </div>
+        <div class="faq__item">
+          <button class="faq__button" aria-expanded="false">
+            <span>Who are the designers?</span>
+            <span class="faq__icon" aria-hidden="true">+</span>
+          </button>
+          <div class="faq__content">
+            <p class="feature-list__description">A small pod of senior product and marketing designers with award-winning web experience.</p>
+          </div>
+        </div>
+        <div class="faq__item">
+          <button class="faq__button" aria-expanded="false">
+            <span>How does the pause feature work?</span>
+            <span class="faq__icon" aria-hidden="true">+</span>
+          </button>
+          <div class="faq__content">
+            <p class="feature-list__description">Pause anytime; unused days roll over so you only pay for active collaboration.</p>
+          </div>
+        </div>
+        <div class="faq__item">
+          <button class="faq__button" aria-expanded="false">
+            <span>What programs do you design in?</span>
+            <span class="faq__icon" aria-hidden="true">+</span>
+          </button>
+          <div class="faq__content">
+            <p class="feature-list__description">We design in Figma and ship in Framer for motion-rich, production-ready experiences.</p>
+          </div>
+        </div>
+        <div class="faq__item">
+          <button class="faq__button" aria-expanded="false">
+            <span>How do I request designs?</span>
+            <span class="faq__icon" aria-hidden="true">+</span>
+          </button>
+          <div class="faq__content">
+            <p class="feature-list__description">Submit via Notion board with context, references, and goals; we clarify and start immediately.</p>
+          </div>
+        </div>
+        <div class="faq__item">
+          <button class="faq__button" aria-expanded="false">
+            <span>What if I don't like the design?</span>
+            <span class="faq__icon" aria-hidden="true">+</span>
+          </button>
+          <div class="faq__content">
+            <p class="feature-list__description">We iterate until you're satisfied—unlimited revisions are included in every plan.</p>
+          </div>
+        </div>
+        <div class="faq__item">
+          <button class="faq__button" aria-expanded="false">
+            <span>What if I only have a single request?</span>
+            <span class="faq__icon" aria-hidden="true">+</span>
+          </button>
+          <div class="faq__content">
+            <p class="feature-list__description">Use a single month for a one-off sprint and pause once delivered—no long commitments.</p>
+          </div>
+        </div>
+        <div class="faq__item">
+          <button class="faq__button" aria-expanded="false">
+            <span>Are there any refunds if I don't like the service?</span>
+            <span class="faq__icon" aria-hidden="true">+</span>
+          </button>
+          <div class="faq__content">
+            <p class="feature-list__description">We offer a flexible pause/cancel policy and work with you closely to ensure outcomes match expectations.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 18: Final CTA -->
+    <section class="section cta-final">
+      <h2 class="cta-final__headline heading-2 text-zoom">Open the doors to new customers with award-winning design.</h2>
+      <p class="cta-final__subheadline body-large text-zoom">We're ready to get started, just say the word.</p>
+      <div class="hero__cta">
+        <button class="btn-primary" type="button">See plans</button>
+      </div>
+    </section>
+
+    <!-- Section 19: Footer -->
+    <footer class="footer">
+      <div class="footer__grid">
+        <div>
+          <div class="footer__logo">Productize</div>
+          <div class="footer__tagline">The unlimited, lightning fast web design subscription service.</div>
+        </div>
+        <nav class="footer__nav" aria-label="Footer navigation">
+          <a href="#how-it-works">How it works</a>
+          <a href="#benefits">Benefits</a>
+          <a href="#work">Recent work</a>
+          <a href="#pricing">Pricing</a>
+          <a href="#faq">FAQs</a>
+          <a href="#contact">Contact</a>
+          <a href="#login">Client login</a>
+        </nav>
+      </div>
+      <div class="footer__social">
+        <a href="#" aria-label="Twitter">T</a>
+        <a href="#" aria-label="LinkedIn">in</a>
+        <a href="#" aria-label="Dribbble">D</a>
+      </div>
+      <div class="footer__meta">
+        <span>© 2025 Productize. All rights reserved.</span>
+        <span>Built in Framer</span>
+      </div>
+    </footer>
+  </main>
+
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>

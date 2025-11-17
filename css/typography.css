@@ -1,0 +1,80 @@
+@import url('https://api.fontshare.com/v2/css?f[]=satoshi@700,500,400&display=swap');
+
+body {
+  font-family: var(--font-body);
+  color: var(--color-text-primary);
+  background-color: var(--color-background);
+  font-size: var(--font-size-body);
+  line-height: var(--line-height-body);
+  letter-spacing: var(--letter-spacing-body);
+  font-weight: var(--font-weight-body);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-heading);
+  color: var(--color-text-primary);
+  letter-spacing: var(--letter-spacing-h2);
+  font-weight: var(--font-weight-h2);
+  line-height: 1.1;
+}
+
+h1,
+.heading-1 {
+  font-size: var(--font-size-h1);
+  line-height: var(--line-height-h1);
+  letter-spacing: var(--letter-spacing-h1);
+  font-weight: var(--font-weight-h1);
+}
+
+h2,
+.heading-2 {
+  font-size: var(--font-size-h2);
+  line-height: var(--line-height-h2);
+  letter-spacing: var(--letter-spacing-h2);
+  font-weight: var(--font-weight-h2);
+}
+
+h3,
+.heading-3 {
+  font-size: var(--font-size-h3);
+  line-height: var(--line-height-h3);
+  letter-spacing: var(--letter-spacing-h3);
+  font-weight: var(--font-weight-h3);
+}
+
+.body-large {
+  font-size: var(--font-size-body);
+  line-height: var(--line-height-body);
+  letter-spacing: var(--letter-spacing-body);
+  font-weight: var(--font-weight-body);
+}
+
+.text-small {
+  font-size: var(--font-size-small);
+  line-height: var(--line-height-small);
+  letter-spacing: var(--letter-spacing-small);
+  font-weight: var(--font-weight-small);
+}
+
+.caption {
+  font-size: var(--font-size-caption);
+  line-height: var(--line-height-caption);
+  letter-spacing: var(--letter-spacing-caption);
+  font-weight: var(--font-weight-caption);
+  text-transform: uppercase;
+}
+
+a {
+  font-weight: 500;
+}
+
+strong {
+  font-weight: 600;
+}
