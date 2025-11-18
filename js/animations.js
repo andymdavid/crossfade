@@ -6,6 +6,13 @@ export function initAnimations() {
   const faqItems = document.querySelectorAll('.faq__item');
   const portfolioGrid = document.querySelector('.portfolio__grid');
   const statsOverlay = document.querySelector('.stats--overlay');
+  const floatingNav = document.querySelector('.floating-nav');
+
+  // Ensure nav starts hidden
+  if (floatingNav) {
+    floatingNav.classList.remove('is-visible');
+    console.log('Floating nav initialized as hidden');
+  }
 
   if (heroStack && hero) {
     let stackTop = heroStack.offsetTop;
@@ -17,7 +24,7 @@ export function initAnimations() {
     console.log('heroHeight:', heroHeight);
     console.log('stackHeight (calculated):', stackHeight);
     console.log('heroStack.offsetHeight:', heroStack.offsetHeight);
-    console.log('Transition will happen at:', stackTop + (heroHeight * 2), 'px (200vh)');
+    console.log('Transition will happen at:', stackTop + (heroHeight * 2.15), 'px (215vh)');
     console.log('Mission appears at:', stackTop + stackHeight - window.innerHeight, 'px');
 
     const clamp = (val, min, max) => Math.min(Math.max(val, min), max);
@@ -27,10 +34,10 @@ export function initAnimations() {
       const scrollY = window.scrollY;
       const progress = clamp((scrollY - stackTop) / heroHeight, 0, 1);
 
-      // Keep viewport-locked until 200vh, then transition to scrolling
-      const transitionPoint = stackTop + (heroHeight * 2); // 200vh
+      // Keep viewport-locked until 215vh, then transition to scrolling
+      const transitionPoint = stackTop + (heroHeight * 2.15); // 215vh
 
-      // During crossfade and until 200vh: Keep sections viewport-locked
+      // During crossfade and until 215vh: Keep sections viewport-locked
       if (scrollY < transitionPoint) {
         hero.style.position = 'fixed';
         hero.style.top = '0';
@@ -68,6 +75,17 @@ export function initAnimations() {
 
       if (mission && scrollY >= stackTop + stackHeight - window.innerHeight) {
         mission.classList.add('is-revealed');
+      }
+
+      // Show floating nav after 300vh crossfade section
+      if (floatingNav) {
+        const showThreshold = stackTop + stackHeight - window.innerHeight;
+        if (scrollY >= showThreshold) {
+          floatingNav.classList.add('is-visible');
+          console.log('Nav shown at scrollY:', scrollY, 'threshold:', showThreshold);
+        } else {
+          floatingNav.classList.remove('is-visible');
+        }
       }
     };
 
