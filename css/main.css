@@ -165,7 +165,6 @@ body {
   opacity: 1;
   transition: opacity var(--transition-base) var(--ease-out), transform var(--transition-base) var(--ease-out);
   z-index: var(--z-sticky);
-  background: var(--color-background);
   overflow: hidden;
 }
 
@@ -178,22 +177,14 @@ body {
   justify-content: center;
 }
 
-.hero::before {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background: var(--hero-gradient-overlay);
-  z-index: -2;
-}
-
 .hero__background {
   position: absolute;
   inset: 0;
-  background: var(--color-background);
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
   z-index: -3;
-  background-image: var(--gradient-animated);
-  background-size: 400% 400%;
-  animation: hero-gradient-shift 15s ease infinite;
+  opacity: 0.8;
 }
 
 .hero__light-streak {
@@ -307,7 +298,6 @@ body {
   justify-content: center;
   z-index: var(--z-base);
   opacity: 0;
-  background: var(--color-background);
   pointer-events: none;
 }
 

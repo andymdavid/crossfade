@@ -9,11 +9,11 @@
   --color-accent-blue-end: #7C3AED;
   --gradient-animated: linear-gradient(
     135deg,
-    #667eea 0%,
-    #764ba2 25%,
-    #f093fb 50%,
-    #4facfe 75%,
-    #00f2fe 100%
+    #3B4FDF 0%,
+    #5D3FD3 25%,
+    #7B2FBE 50%,
+    #B43890 75%,
+    #E74694 100%
   );
   --gradient-border: linear-gradient(
     90deg,
